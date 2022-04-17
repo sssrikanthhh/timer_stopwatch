@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-const Counter = () => {
+const Timer = () => {
 	const [second, setSecond] = useState(0);
 	const [milliSecond, setMilliSecond] = useState(0);
 	const [act, setAct] = useState(false);
@@ -42,13 +42,20 @@ const Counter = () => {
 
 	return (
 		<div className='stop_watch'>
-			<h1>Stop Watch</h1>
+			<h1>Masai Timer</h1>
+
+			<input
+				type='Number'
+				id='minute'
+				placeholder='enter minute'
+				onChange={e => setSecond(Number(e.target.value))}
+			/>
 
 			<input
 				type='Number'
 				id='second'
 				placeholder='enter seconds'
-				onChange={e => setSecond(Number(e.target.value))}
+				onChange={e => setMilliSecond(Number(e.target.value))}
 			/>
 			<h1>
 				<span className='sec'>{second}</span>m
@@ -85,4 +92,4 @@ const Counter = () => {
 	);
 };
 
-export default Counter;
+export default Timer;
