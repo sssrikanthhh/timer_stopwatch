@@ -1,0 +1,36 @@
+body {
+	background-color: lightgrey;
+}
+
+.App {
+	text-align: center;
+}
+
+.stop_watch {
+	width: 45%;
+	margin: auto;
+	background-color: white;
+	border: 1px solid black;
+	padding: 1rem;
+}
+
+h1 {
+	margin: 0.3rem 0;
+}
+
+.sec {
+	font-size: 4rem;
+}
+
+button {
+	margin: 0 1rem;
+	background-color: black;
+	padding: 0.3rem 2em;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+input {
+	padding: 0.3rem 1rem;
+}
